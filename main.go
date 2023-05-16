@@ -138,7 +138,7 @@ func main() {
 	var cmdApps = &cobra.Command{
 		Use:       "apps [" + strings.Join(validArguments, " ") + "] ",
 		ValidArgs: validArguments,
-		Short:     "install the certificate on all apps that don't dollow trust store unless specified",
+		Short:     "install the certificate on all apps that don't follow trust store unless specified",
 		Long:      "apps that where certificate will be installed: " + strings.Join(validArguments, " "),
 		Args:      cobra.OnlyValidArgs,
 		Run: func(cmd *cobra.Command, args []string) {
